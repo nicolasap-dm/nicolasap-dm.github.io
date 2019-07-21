@@ -1,0 +1,129 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color:#000;
+  background-color:#e1e5ef;
+  background-image: url(../elements/background_lighter.png);
+  padding-top: 40px;
+  height: 100%;
+}
+
+.mark, mark{
+  background-color: #faf2fe;
+} 
+
+.footer {
+  margin-top:40vh;
+  text-align:center;
+  padding-bottom:3em;
+}
+.footer p{
+  background-color:rgba(225,229,239,.8);
+  display:inline;
+  font-size:.9em;
+}
+
+.container{
+  height:100%;
+  background: url(../elements/footer.png) no-repeat center bottom;   
+  background-size: contain;
+}
+
+h1,h2,h3,h4{
+  color:#333;
+}
+h1,h2{
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  margin-top:.25em;
+}
+h1{
+  font-size:2em;
+}
+h2{
+  font-size:1.6em;
+}
+h3{
+  font-size:1.4em;
+}
+h4{
+  font-size:1.2em;
+}
+
+.newpar-small{
+  margin-top:.5em;
+}
+.newpar{
+  margin-top:1em;
+}
+.newpar-big{
+  margin-top:1.5em;
+}
+.newpar-bigger{
+  margin-top:2em;
+}
+
+.row{
+  margin-top:1em;
+}
+
+#phd-thesis{
+  width:140px;
+}
+
+#cover-jctc{
+  width:220px;
+}
+
+.profilepic{
+  max-width: 190px;
+  padding:2px;
+  margin-bottom:1em;
+}
+.img-thumbnail{
+  padding:2px;
+}
+
+.pull-right{
+  margin-left:1em;
+}
+
+.paper{
+  font-size: .9em;
+}
+
+.withcube{
+  background-image: url(../elements/cube5.png);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 90px;
+  min-height: 120px;
+}
+.withcube h2{
+  margin-top:1em;
+}
+.withcube h2 span{
+  background-color: #faf2fe;
+}
+
+#cube1{background-image: url(../elements/cube1.png);}
+#cube3{background-image: url(../elements/cube3.png);}
+#cube4{background-image: url(../elements/cube4.png);}
+#cube5{background-image: url(../elements/cube5.png);}
+#cube6{background-image: url(../elements/cube6.png);}
+
+/* responsiveness */
+.sectionhead{
+  text-align: center;
+}
+.withcube{
+  background-position-x: center;
+  padding-top:.5em;
+}
+@media screen and (min-width: 48em){
+  .sectionhead{
+      text-align: right;
+  }
+  .withcube{
+    background-position-x: right;
+  }
+}
