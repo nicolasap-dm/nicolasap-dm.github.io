@@ -15,9 +15,23 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
 
-  <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+        <li><a href="#research" class="firstnav">research</a></li>
+        <li><a href="#cgi">3D</a></li>
+        <li><a href="#persona">find me</a></li>
+        <li><a href="#friends">friends</a></li>
+        <li><a href="#resources" class="lastnav">resources</a></li>
+      </ul>
+
+  </div>
+</nav>
+
+  <div class="container with-footer-image">
 
     <!-- BIO -->
 
@@ -40,7 +54,7 @@
   
     <!-- RESEARCH -->
 
-    <div class="row">
+    <div class="row" id="research">
       <div class="col-sm-3 sectionhead withcube" id="cube5">
         <h2><span>research</span></h2>
       </div>
@@ -113,7 +127,7 @@
 
     <!-- CGI -->
 
-    <div class="row">
+    <div class="row" id="cgi">
       <div class="col-sm-3 sectionhead withcube" id="cube3">
         <h2><span>3D graphics</span></h2>
       </div>
@@ -154,7 +168,7 @@
 
     <!-- links -->
 
-    <div class="row">
+    <div class="row" id="persona">
       <div class="col-sm-3 sectionhead withcube" id="cube6">
         <h2><span>me elsewhere</span></h2>
       </div>
@@ -168,9 +182,22 @@
 
     <!-- friends -->
 
-    <div class="row">
+    <div class="row" id="friends">
       <div class="col-sm-3 sectionhead withcube" id="cube4">
         <h2><span>friends</span></h2>
+      </div>
+      <div class="col-sm-7">
+        <div class="col-sm-12">
+        ...
+        </div>
+      </div>
+    </div>
+
+    <!-- resources -->
+
+    <div class="row" id="resources">
+      <div class="col-sm-3 sectionhead withcube" id="cube1">
+        <h2><span>resources</span></h2>
       </div>
       <div class="col-sm-7">
         <div class="col-sm-12">
@@ -194,6 +221,20 @@
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+/* Makes the anchor point to above the content, to avoid the
+   navbar from hiding it; Offset is slightly less than that
+   used by scrollspy, otherwise scrollspy will still think
+   that the prev anchor is in focus.
+   Source: Kurt UXD https://stackoverflow.com/a/11814275
+*/
+var offset = 65;
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+
 </script>
 
 </body>
