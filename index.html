@@ -27,7 +27,10 @@
       </div>
       <div class="col-sm-6">
         <div class="col-sm-12">
-          <h1>I'm Nicola De Mitri</h1>
+          <h1>
+            I'm Nicola De Mitri
+            <span data-toggle="tooltip" data-placement="top" title="but friends called me 'Sap' at uni" style="opacity:.15">*</span>
+          </h1>
           <p>I live in Cambridge, UK, and I'm a <mark>scientific software developer</mark> at <a href="https://www.enthought.com">Enthought</a>.</p>
           <p>I work with <mark>Python</mark> on consulting projects involving data management and visualisation.</p>
           <p class="newpar-bigger"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> This website is <mark>work in progress</mark>!</p>
@@ -184,6 +187,14 @@
     </div>
 
   </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 </body>
 
