@@ -7,9 +7,38 @@ body {
   height: 100%;
 }
 
+a > .mark, a > mark{
+  color:#337ab7;
+}
+
 .mark, mark{
   background-color: #faf2fe;
 } 
+
+.highlight1{
+  border-top: 1px solid #c7cddb;
+  border-bottom: 1px solid #c7cddb;
+  background-color:#dde1ec;
+}
+
+#friends-content .glyphicon-bookmark{
+  font-size:.7em;
+}
+
+.row-social{
+  margin-bottom:.5em;
+}
+.row-social a:hover{
+  text-decoration: none; 
+}
+.img-social{
+  width:26px;
+  opacity:.35;
+  margin-bottom:5px;
+}
+.img-social:hover{
+  opacity:.85;
+}
 
 .footer {
   margin-top:40vh;
@@ -63,7 +92,7 @@ h4{
 }
 
 .row{
-  margin-top:1em;
+  margin-top:2.5em;
 }
 
 #phd-thesis{
@@ -88,6 +117,10 @@ h4{
 }
 
 .paper{
+  font-size: .9em;
+}
+
+#friends-content{
   font-size: .9em;
 }
 
