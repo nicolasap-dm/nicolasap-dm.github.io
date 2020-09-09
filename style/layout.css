@@ -197,3 +197,17 @@ h4{
   }
 }
 
+
+.video-preview .glyphicon
+{
+    position:relative;
+    top:-20px;
+    right:5px;
+    text-align:right;
+    display:block;
+    color:white;
+}
+.video-preview a
+{
+    text-decoration:none;
+}
