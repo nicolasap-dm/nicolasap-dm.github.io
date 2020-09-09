@@ -8,6 +8,6 @@ Link: <https://nicolasap-dm.github.io/>
 
 ### html styling
 ```
-tidy -i -w 80 -ashtml -utf8 --drop-empty-elements no -w index.html
+tidy -i -w 80 -ashtml -utf8 --drop-empty-elements no index.html
 ```
 using tidy 5.4.0
