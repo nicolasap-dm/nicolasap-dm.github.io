@@ -32,10 +32,33 @@
             color: black;
             text-decoration: underline;
         }
+        .titlespace {
+            display: inline-block;
+            width: .6ch;
+            transition: width 0.3s ease-out;
+        }
+
+        .titlesymb {
+            display: inline-block;
+            width: 0;
+            transition: width 0.3s ease-out;
+            color: #00000000;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        h1:hover .titlespace {
+            width: 0;
+        }
+
+        h1:hover .titlesymb {
+            width: .6ch;
+            color: #209090ff;
+        }
     </style>
 </head>
 <body>
-    <h1>Nicola De Mitri</h1>
+    <h1>nicola<span class="titlespace">&nbsp;</span>de<span class="titlespace">&nbsp;</span>m<span class="titlesymb">.</span>it<span class="titlesymb">/</span>ri</h1>
     <div class="subtitle">Cambridge, UK</div>
     <div class="links">
         <a href="https://bsky.app/profile/nicoladem.it">Bluesky</a> · 
